@@ -14,6 +14,7 @@ public class RaidDTO {
 	public PokemonDTO pokemon;
 	
 	public RaidDTO(Long id, Long hostFC, PokemonDTO pokemon) {
+		this.id = id;
 		this.hostFC = hostFC;
 		this.pokemon = pokemon;
 	}

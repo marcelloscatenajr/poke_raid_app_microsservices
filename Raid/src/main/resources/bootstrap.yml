@@ -1,6 +1,6 @@
 spring:
   application:
-    name: raid
+    name: poke-raid
   cloud:
     config:
       uri: http://localhost:8888

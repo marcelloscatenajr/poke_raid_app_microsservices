@@ -1,0 +1,21 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: poke-api-gateway-zuul
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+zuul:
+  routes:
+    pokemon:
+      service-id: poke-pokemon
+      path: /poke-pokemon/**
+    raid:
+      service-id: poke-raid
+      path: /poke-raid/**

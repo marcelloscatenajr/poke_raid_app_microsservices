@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.scatena.marcello.Raid.dto.PokemonDTO;
 
-@FeignClient("pokemon")
+@FeignClient("poke-pokemon")
 public interface PokemonClient {
 
 	@GetMapping("/pokemon/{number}")
