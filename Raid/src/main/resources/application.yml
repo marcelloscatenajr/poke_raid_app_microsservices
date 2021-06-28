@@ -6,5 +6,5 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
+      #defaultZone: http://poke-eureka-server:8761/eureka
       defaultZone: http://localhost:8761/eureka
-      #defaultZone: http://poke-eurea-server:8761/eureka

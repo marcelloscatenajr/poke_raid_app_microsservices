@@ -9,12 +9,13 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
+      #defaultZone: http://poke-eureka-server:8761/eureka
       defaultZone: http://localhost:8761/eureka
 
 zuul:
   routes:
     pokemon:
-      service-id: poke-pokemon
+      service-id: pokemon
       path: /poke-pokemon/**
     raid:
       service-id: poke-raid

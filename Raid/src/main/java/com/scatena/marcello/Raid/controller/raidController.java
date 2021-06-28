@@ -54,7 +54,7 @@ public class raidController {
 		Optional<Raid> optRaid = raidRepository.findById(id);
 		Raid raid = optRaid.get();
 		PokemonDTO pokemon = raidService.getPokemon(raid.getPokemonNumber());
-		RaidDTO raidDTO = new RaidDTO(raid.getId(), raid.getHostFC(), pokemon);
+		RaidDTO raidDTO =  new RaidDTO(raid.getId(), raid.getHostFC(), raid.getGuestFC1(),raid.getGuestFC2(),raid.getGuestFC3(), pokemon);
 		return raidDTO;
 		
 		
