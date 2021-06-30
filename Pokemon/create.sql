@@ -32,3 +32,9 @@ create table pokemon (number int4 not null, name varchar(255), type1 varchar(255
 create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
 create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
 create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
+create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
+create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
+create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
+create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
+create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
+create table pokemon (number int4 not null, name varchar(255), type1 varchar(255), type2 varchar(255), primary key (number));
