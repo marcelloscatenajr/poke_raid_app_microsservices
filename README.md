@@ -1,7 +1,7 @@
 Links
-release do app front-end: https://github.com/Tabacow/projeto-de-flutter-Aplicativos-Hibridos/releases/tag/1 <br />
+repositório do app front-end: https://github.com/Tabacow/projeto-de-flutter-Aplicativos-Hibridos/tree/development <br />
 repositório do config-server: https://github.com/marcelloscatenajr/poke_raid_app_config_server <br />
-vídeo mostrando o projeto: https://www.youtube.com/watch?v=Q9s_P-Bj3xk <br />
+vídeo mostrando o projeto: https://www.youtube.com/watch?v=EY9vn2g01_M <br />
 
 Criação e alimentação dos bancos de dados:
 
@@ -25,6 +25,13 @@ docker pull postgres:12-alpine
 docker run -p 5432:5432 --name pokemon-pg12 --network poke-net -e POSTGRES_PASSWORD=ma101098 -e POSTGRES_DB=pokemon postgres:12-alpine
 docker run -p 5433:5432 --name raid-pg12 --network poke-net -e POSTGRES_PASSWORD=ma101098 -e POSTGRES_DB=raid postgres:12-alpine
 ```
+
+Caso não seja possível usar as configurações que o config server aponta no github, siga os seguintes passos:
+
+-Crie um diretório em qualquer lugar da máquina e coloque os arquivos que estão no repositório do config-server nele.
+-Em config-server/src/main/resources/application.properties comente as linhas que estão descomentadas e descomente as linhas comentadas
+-troque o endereço
+-Troque o valor da variável spring.cloud.config.server.native.search-locations para o endereço criado acima
 
 Comandos usados para subir os microsserviços no docker: (Funcionamento parcial)
 ```
