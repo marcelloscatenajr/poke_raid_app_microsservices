@@ -28,10 +28,10 @@ docker run -p 5433:5432 --name raid-pg12 --network poke-net -e POSTGRES_PASSWORD
 
 Caso não seja possível usar as configurações que o config server aponta no github, siga os seguintes passos:
 
--Crie um diretório em qualquer lugar da máquina e coloque os arquivos que estão no repositório do config-server nele.
--Em config-server/src/main/resources/application.properties comente as linhas que estão descomentadas e descomente as linhas comentadas
--troque o endereço
--Troque o valor da variável spring.cloud.config.server.native.search-locations para o endereço criado acima
+-Crie um diretório em qualquer lugar da máquina e coloque os arquivos que estão no repositório do config-server nele.<br />
+-Em config-server/src/main/resources/application.properties comente as linhas que estão descomentadas e descomente as linhas comentadas.<br />
+-troque o endereço<br />
+-Troque o valor da variável spring.cloud.config.server.native.search-locations para o endereço criado acima.<br />
 
 Comandos usados para subir os microsserviços no docker: (Funcionamento parcial)
 ```
